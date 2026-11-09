@@ -1,0 +1,15 @@
+{
+	"name": "VisionBoard-DEV-ING",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "f02b0671-84b0-4c23-a64e-b63bf2674068",
+		"tenantId": "8d0ec2f0-7e14-4493-a0e1-eddfdf4400f7"
+	}
+}
