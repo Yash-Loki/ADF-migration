@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "VisionBoard-DEV-ING"
+		},
+		"AzureBlobStorageSink_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorageSource_accountKey": {
+			"value": ""
+		},
+		"LS_SINK1_CSV_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorageSource_properties_typeProperties_url": {
+			"value": "https://lokisourcesa.dfs.core.windows.net/"
+		},
+		"LS_SINK1_CSV_properties_typeProperties_url": {
+			"value": "https://lokisinksa.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
