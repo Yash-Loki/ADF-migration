@@ -518,6 +518,9 @@
 						"type": "string"
 					}
 				},
+				"folder": {
+					"name": "ADF_PL_SQLMIGRATION"
+				},
 				"annotations": []
 			},
 			"dependsOn": [
@@ -589,6 +592,9 @@
 					"watermarkcolumn": {
 						"type": "string"
 					}
+				},
+				"folder": {
+					"name": "ADF_PL_SQLMIGRATION"
 				},
 				"annotations": []
 			},
@@ -691,6 +697,9 @@
 				"policy": {
 					"elapsedTimeMetric": {}
 				},
+				"folder": {
+					"name": "ADF_PL_SQLMIGRATION"
+				},
 				"annotations": []
 			},
 			"dependsOn": [
@@ -714,6 +723,9 @@
 					"tablename": {
 						"type": "string"
 					}
+				},
+				"folder": {
+					"name": "ADF_DS_SQLMIGRATION"
 				},
 				"annotations": [],
 				"type": "SqlServerTable",
@@ -850,6 +862,9 @@
 					"referenceName": "LS_SQLSERVER_ONPREM",
 					"type": "LinkedServiceReference"
 				},
+				"folder": {
+					"name": "ADF_DS_SQLMIGRATION"
+				},
 				"annotations": [],
 				"type": "SqlServerTable",
 				"schema": [
@@ -893,6 +908,9 @@
 					"tablename": {
 						"type": "string"
 					}
+				},
+				"folder": {
+					"name": "ADF_DS_SQLMIGRATION"
 				},
 				"annotations": [],
 				"type": "Parquet",
