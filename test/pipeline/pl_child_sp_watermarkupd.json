@@ -1,0 +1,62 @@
+{
+	"name": "pl_child_sp_watermarkupd",
+	"properties": {
+		"activities": [
+			{
+				"name": "SP-UPDT-WTRMRK",
+				"type": "SqlServerStoredProcedure",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[dbo].[UpdateWatermark]",
+					"storedProcedureParameters": {
+						"tableschema": {
+							"value": {
+								"value": "@pipeline().parameters.tableschema",
+								"type": "Expression"
+							},
+							"type": "String"
+						},
+						"tablename": {
+							"value": {
+								"value": "@pipeline().parameters.tablename",
+								"type": "Expression"
+							},
+							"type": "String"
+						},
+						"watermarkcolumn": {
+							"value": {
+								"value": "@pipeline().parameters.watermarkcolumn",
+								"type": "Expression"
+							},
+							"type": "String"
+						}
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "LS_SQLSERVER_ONPREM",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"parameters": {
+			"tableschema": {
+				"type": "string"
+			},
+			"tablename": {
+				"type": "string"
+			},
+			"watermarkcolumn": {
+				"type": "string"
+			}
+		},
+		"annotations": []
+	}
+}
