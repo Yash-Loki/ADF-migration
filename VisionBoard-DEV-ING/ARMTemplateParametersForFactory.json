@@ -11,14 +11,32 @@
 		"AzureDataLakeStorageSource_accountKey": {
 			"value": ""
 		},
+		"LS_ONPREMSQL_MiGRATION_ADLS_accountKey": {
+			"value": ""
+		},
 		"LS_SINK1_CSV_accountKey": {
+			"value": ""
+		},
+		"LS_SQLSERVER_ONPREM_password": {
 			"value": ""
 		},
 		"AzureDataLakeStorageSource_properties_typeProperties_url": {
 			"value": "https://lokisourcesa.dfs.core.windows.net/"
 		},
+		"LS_ONPREMSQL_MiGRATION_ADLS_properties_typeProperties_url": {
+			"value": "https://onpremsqlmigrationsa.dfs.core.windows.net/"
+		},
 		"LS_SINK1_CSV_properties_typeProperties_url": {
 			"value": "https://lokisinksa.dfs.core.windows.net/"
+		},
+		"LS_SQLSERVER_ONPREM_properties_typeProperties_server": {
+			"value": ".\\SQLEXPRESS"
+		},
+		"LS_SQLSERVER_ONPREM_properties_typeProperties_database": {
+			"value": "sqlmigration"
+		},
+		"LS_SQLSERVER_ONPREM_properties_typeProperties_userName": {
+			"value": "yashwanth"
 		}
 	}
 }

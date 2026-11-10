@@ -15,17 +15,41 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorageSource'"
 		},
+		"LS_ONPREMSQL_MiGRATION_ADLS_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_ONPREMSQL_MiGRATION_ADLS'"
+		},
 		"LS_SINK1_CSV_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LS_SINK1_CSV'"
+		},
+		"LS_SQLSERVER_ONPREM_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_SQLSERVER_ONPREM'"
 		},
 		"AzureDataLakeStorageSource_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://lokisourcesa.dfs.core.windows.net/"
 		},
+		"LS_ONPREMSQL_MiGRATION_ADLS_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://onpremsqlmigrationsa.dfs.core.windows.net/"
+		},
 		"LS_SINK1_CSV_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://lokisinksa.dfs.core.windows.net/"
+		},
+		"LS_SQLSERVER_ONPREM_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": ".\\SQLEXPRESS"
+		},
+		"LS_SQLSERVER_ONPREM_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "sqlmigration"
+		},
+		"LS_SQLSERVER_ONPREM_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "yashwanth"
 		},
 		"containerUri": {
 			"type": "string",
@@ -60,14 +84,32 @@
 					"AzureDataLakeStorageSource_accountKey": {
 						"value": "[parameters('AzureDataLakeStorageSource_accountKey')]"
 					},
+					"LS_ONPREMSQL_MiGRATION_ADLS_accountKey": {
+						"value": "[parameters('LS_ONPREMSQL_MiGRATION_ADLS_accountKey')]"
+					},
 					"LS_SINK1_CSV_accountKey": {
 						"value": "[parameters('LS_SINK1_CSV_accountKey')]"
+					},
+					"LS_SQLSERVER_ONPREM_password": {
+						"value": "[parameters('LS_SQLSERVER_ONPREM_password')]"
 					},
 					"AzureDataLakeStorageSource_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorageSource_properties_typeProperties_url')]"
 					},
+					"LS_ONPREMSQL_MiGRATION_ADLS_properties_typeProperties_url": {
+						"value": "[parameters('LS_ONPREMSQL_MiGRATION_ADLS_properties_typeProperties_url')]"
+					},
 					"LS_SINK1_CSV_properties_typeProperties_url": {
 						"value": "[parameters('LS_SINK1_CSV_properties_typeProperties_url')]"
+					},
+					"LS_SQLSERVER_ONPREM_properties_typeProperties_server": {
+						"value": "[parameters('LS_SQLSERVER_ONPREM_properties_typeProperties_server')]"
+					},
+					"LS_SQLSERVER_ONPREM_properties_typeProperties_database": {
+						"value": "[parameters('LS_SQLSERVER_ONPREM_properties_typeProperties_database')]"
+					},
+					"LS_SQLSERVER_ONPREM_properties_typeProperties_userName": {
+						"value": "[parameters('LS_SQLSERVER_ONPREM_properties_typeProperties_userName')]"
 					}
 				}
 			},
