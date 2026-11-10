@@ -5,6 +5,9 @@
 			"referenceName": "LS_SQLSERVER_ONPREM",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "ADF_DS_SQLMIGRATION"
+		},
 		"annotations": [],
 		"type": "SqlServerTable",
 		"schema": [

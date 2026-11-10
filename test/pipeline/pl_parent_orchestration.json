@@ -87,6 +87,9 @@
 				}
 			}
 		],
+		"folder": {
+			"name": "ADF_PL_SQLMIGRATION"
+		},
 		"annotations": []
 	}
 }

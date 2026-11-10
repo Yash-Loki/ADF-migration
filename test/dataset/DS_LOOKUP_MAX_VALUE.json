@@ -13,6 +13,9 @@
 				"type": "string"
 			}
 		},
+		"folder": {
+			"name": "ADF_DS_SQLMIGRATION"
+		},
 		"annotations": [],
 		"type": "SqlServerTable",
 		"schema": [],
